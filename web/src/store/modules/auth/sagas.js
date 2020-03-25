@@ -22,7 +22,7 @@ export function* signIn({ payload }) {
       return;
     }
 
-    // Realiza requisição a resposta do tokken do usuario logado
+    // Realiza requisição de autorização do tokken do usuario logado
     api.defaults.headers.Authorization = `Bearer ${token}`;
 
     yield put(signInSuccess(token, user));

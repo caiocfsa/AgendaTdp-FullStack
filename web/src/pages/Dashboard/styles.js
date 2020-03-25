@@ -40,7 +40,7 @@ export const Time = styled.li`
 
   strong {
     display: block;
-    color: ${props => (props.available ? '#999' : '#7159c1')};
+    color: ${props => (props.available ? '#999' : '#9c092f')};
     font-size: 20px;
     font-weight: normal;
   }

@@ -41,8 +41,6 @@ class AvailableController {
       '15:00',
       '16:00',
       '17:00',
-      '18:00',
-      '19:00',
     ];
 
     const available = schedule.map(time => {
@@ -54,7 +52,7 @@ class AvailableController {
 
       return {
         time,
-        value: format(value, "yyyy:MM:dd'T'HH:mm:ssxxx"),
+        value: format(value, "yyyy-MM-dd'T'HH:mm:ssxxx"),
         available:
           isAfter(value, new Date()) &&
           !appointments.find(a => format(a.date, 'HH:mm') === time),

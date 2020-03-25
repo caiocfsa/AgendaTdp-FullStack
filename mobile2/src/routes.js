@@ -58,7 +58,7 @@ export default (signed = false) =>
                         resetOnBlur: true,
                         tabBarOptions: {
                             style: {
-                                backgroundColor: '#8d41a8',
+                                backgroundColor: '#9c092f',
                             },
                             activeTintColor: '#fff',
                             inactiveTintColor: 'rgba(255,255,255,0.6)',
